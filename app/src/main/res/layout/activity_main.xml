@@ -5,13 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="14.5"
+        android:background="#6F6F6F"
         android:orientation="vertical"
         >
 
@@ -21,17 +21,77 @@
             android:layout_weight="10"
             android:background="#E4E4E4"
             android:orientation="vertical"
-            android:gravity="right|bottom"
+            android:weightSum="5"
             >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Enter Input"
-                android:textSize="27sp"
-                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/OutputTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Output"
+                    android:textSize="30sp"
+                    android:layout_margin="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/InputExtraId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Input"
+                    android:textSize="20sp"
+                    android:layout_marginRight="20dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+
+                android:gravity="right|bottom"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/InputTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Input"
+                    android:layout_marginRight="20dp"
+                    android:textSize="27sp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/ClearId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/clear"
+                    android:textSize="15sp"
+                    android:background="#AFAFAF"
+                    android:textStyle="bold"
+                    android:backgroundTint="#E4E4E4"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
 
         </LinearLayout>
+
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,6 +102,7 @@
             >
 
             <Button
+                android:id="@+id/ResetId"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="C"
@@ -69,6 +130,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/AddId"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="+"
@@ -88,6 +150,7 @@
             >
 
             <Button
+                android:id="@+id/In7Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="7"
@@ -96,6 +159,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/In8Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="8"
@@ -104,6 +168,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/In9Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="9"
@@ -112,6 +177,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/SubId"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="-"
@@ -130,6 +196,7 @@
             >
 
             <Button
+                android:id="@+id/In4Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="4"
@@ -138,6 +205,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/In5Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="5"
@@ -146,6 +214,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/In6Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="6"
@@ -154,6 +223,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/MulId"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="X"
@@ -172,6 +242,7 @@
             >
 
             <Button
+                android:id="@+id/In1Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="1"
@@ -180,6 +251,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/In2Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="2"
@@ -188,6 +260,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/In3Id"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="3"
@@ -196,6 +269,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/DivideId"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:text="/"
